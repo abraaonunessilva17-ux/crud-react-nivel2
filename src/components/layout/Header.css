@@ -1,0 +1,53 @@
+header.header {
+    background-color: #423f3f;
+    overflow: hidden; /*Se diminuir a tela, com esse código o conteúdo não ultrapassa a tela.*/
+    white-space: nowrap; /*Usamos para deixar o texto todo esticado na horizontal, mesmo diminuindo a tela. OBS: Cria barra de rolagem, usar em conjunto com overflow: hidden.*/
+    background-color: whitesmoke;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--shadow);
+    border-bottom: 5px solid rgb(238, 89, 89);
+    width: 100%
+}
+
+.ajusteDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+h1.ajuste {
+    font-size: 20px;
+}
+
+p.subtitle {
+    color: rgb(138, 138, 138);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header .menu-area { /*Isso está estilizando a tag <aside> que na Nav.jsx envolve o nav.*/
+    flex: 1; /* Faz o aside ocupar todo o espaço central */
+    display: flex;
+    justify-content: center; /* Centraliza o que estiver dentro dele */
+}
+
+.header .menu { /*Estilizamos a tag menu que está dentro da tag aside no Nav.jsx.*/
+    padding: 0 30px;
+    flex: 1; /* Faz o menu ocupar todo o espaço central disponível */
+    display: flex;
+    justify-content: center; /* Centraliza os links dentro desse espaço */
+    gap: 20px; /* Espaço entre os links do menu */
+}
+
+.header .menu a { /*Estilizamos o link <a> que está no Nav.jsx.*/
+    text-decoration: none;
+    color: gray;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+.header .menu a:hover { /*Estilizamos o link <a> que está no Nav.jsx.*/
+     background-color: black;
+     color: white;
+}

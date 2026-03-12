@@ -1,0 +1,44 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.product-card h3 {
+    font-size: 22px;
+    color: #dc3545;
+    margin-top: 20px;
+}
+
+.product-card p {
+    height: 10px;
+    font-size: 15px;
+}
+
+
+.product-card button {
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+    border: solid black 1px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.product-card .edit {
+    background-color: #dc3545;
+}
+
+.product-card .edit:hover {
+    background-color: white;
+    color: black
+}
+
+.product-card .delete {
+    background-color: black;
+}
+
+.product-card .delete:hover {
+    background-color: white;
+    color: black;
+}

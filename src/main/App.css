@@ -1,0 +1,14 @@
+:root {
+    --bg-dark: #1A2F3A; /*Variável para a cor de fundo*/
+    --shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.6);
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o site tenha no mínimo a altura da tela */
+}
+
+.content { /*Essa classe está no Main.jsx envolvendo a tag 'main' que possui o conteúdo.*/
+    flex: 1; /* Isso faz o conteúdo "esticar" e empurrar o footer para o fundo */
+}
